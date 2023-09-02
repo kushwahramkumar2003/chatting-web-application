@@ -1,0 +1,12 @@
+.gear {
+  border: 1px solid black;
+  border-radius: 5rem;
+}
+.profile-section {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+/* .container {
+  display: flex;
+  justify-content: space-between;
+} */
