@@ -5,17 +5,17 @@ import Friend from "./Friend";
 
 const Home = () => {
   return (
-    <div className="flex flex-col content-center justify-center text-center mx-4 my-5">
+    <div className="flex flex-col content-center justify-center mx-4 my-5 text-center">
       {/* left section  */}
-      <div>
+      <div className="flex flex-col">
         {/* my profile section  */}
-        <div className="profile-section overflow-hidden mx-2 my-3 max-w-sm ">
+        <div className="max-w-sm mx-2 my-3 overflow-hidden profile-section ">
           <div className="flex flex-row justify-between">
-            <h1 className="flex flex-row py-2 px-3 font-bold text-md ">
+            <h1 className="flex flex-row px-3 py-2 font-bold text-md ">
               My Profile
             </h1>
 
-            <span className="gear flex flex-row py-1 px-1 float-right mx-3 flex-shrink-0 m-auto">
+            <span className="flex flex-row flex-shrink-0 float-right px-1 py-1 m-auto mx-3 gear">
               <AiOutlineSetting />
             </span>
           </div>
@@ -25,21 +25,21 @@ const Home = () => {
             <img
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
               alt="img"
-              className="h-16 w-16 rounded-full object-cover px-2 py-2"
+              className="object-cover w-16 h-16 px-2 py-2 rounded-full"
             />
-            <span className="font-mono text-lg my-1 mx-1 px-2 justify-center content-center text-center flex flex-row place-items-center">
+            <span className="flex flex-row content-center justify-center px-2 mx-1 my-1 font-mono text-lg text-center place-items-center">
               Ramkumar
             </span>
           </div>
         </div>
         {/* friends section  */}
 
-        <div className="profile-section overflow-hidden mx-2 my-3 max-w-sm">
-          <div className="flex flex-row  justify-between">
-            <span className="flex flex-row py-2 px-3 font-bold text-md">
+        <div className="max-w-sm mx-2 my-3 overflow-hidden profile-section">
+          <div className="flex flex-row justify-between">
+            <span className="flex flex-row px-3 py-2 font-bold text-md">
               Discussion
             </span>
-            <span className="gear flex flex-row py-1 px-1 m-auto float-right mx-3">
+            <span className="flex flex-row float-right px-1 py-1 m-auto mx-3 gear">
               <AiOutlineSetting />
             </span>
           </div>
@@ -62,9 +62,19 @@ const Home = () => {
         </div>
       </div>
       {/* right section  */}
-      <div>
+      <div className="flex flex-col profile-section">
         {/* header section  */}
-        <div></div>
+        <div className="">
+          <h1>Conversation</h1>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+              alt="img"
+              className="object-cover w-16 h-16 px-2 py-2 rounded-full"
+            />
+            <span>Ramkumar</span>
+          </div>
+        </div>
         {/* chat section */}
         <div></div>
       </div>
