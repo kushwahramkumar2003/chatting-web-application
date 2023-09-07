@@ -1,6 +1,12 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .gear {
   border: 1px solid black;
   border-radius: 5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .profile-section {
   border: 1px solid black;
@@ -10,3 +16,24 @@
   display: flex;
   justify-content: space-between;
 } */
+
+.gear:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+.myBorder {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.myBorder2 {
+  border: 1px solid black;
+}
+.sendLogo {
+  width: 2vmax;
+  height: 2vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.sendLogo:hover {
+  transform: translateX(10px);
+}
