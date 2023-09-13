@@ -7,6 +7,8 @@ function Signup() {
   const [retypePassword, setRetypePassword] = useState("");
   const [phone, setPhone] = useState("");
 
+  
+
   const submit = () => {};
 
   return (
