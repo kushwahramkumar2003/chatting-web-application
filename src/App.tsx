@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
+import Signup from "./Signup";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     //     loader: teamLoader,
     //   },
     // ],
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
   },
 ]);
 

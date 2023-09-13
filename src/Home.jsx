@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineSetting } from "react-icons/ai";
 import "./Home.css";
 import { VscSend } from "react-icons/vsc/index";
 import Friend from "./Friend";
 import Message from "./Message";
 import ReactScrollToBottom from "react-scroll-to-bottom";
+
 const arr = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 3, 5, 7, 4, 6, 3, 6, 3, 65, 76, 54, 0,
 ];
 const Home = () => {
+  const [myMasseage, setMyMasseage] = useState("");
+
   return (
     <div className="flex flex-row w-full h-full mx-5 my-5 ">
       {/* left section */}
@@ -110,6 +113,10 @@ const Home = () => {
               type="text"
               id="chatInput"
               className="w-full outline-none p-2 text-1.2vmax box-border bg-white  border-gray-800 "
+              value={myMasseage}
+              onChange={(e) => {
+                setMyMasseage(e.target.value);
+              }}
             />
             <button className="flex flex-col w-10 p-2 ">
               <VscSend className="w-8 h-8 sendLogo" />
