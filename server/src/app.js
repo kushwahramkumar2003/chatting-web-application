@@ -1,6 +1,10 @@
 const express = require("express");
 
 const app = express();
+const routes = require("./routes/index.routes.js");
+
+app.use(express.urlencoded({ extended: true }));
+app.use("/api/v1", routes);
 app.use(express.json());
 
 // app.use("/api/v1", routes);
