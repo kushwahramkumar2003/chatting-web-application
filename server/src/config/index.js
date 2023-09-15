@@ -1,7 +1,7 @@
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
 
-export const config = {
+exports.config = {
   port: process.env.PORT || 3000,
   mongo_uri: process.env.MONGO_URI || "mongodb://localhost:27017/chatting-app",
   mail_host: process.env.MAIL_HOST || "smtp.ethereal.email",

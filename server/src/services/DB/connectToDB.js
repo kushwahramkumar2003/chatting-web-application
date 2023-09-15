@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
-import { config } from "../../config/index.js";
+const { config } = require("../../config/index.js");
+const mongoose = require("mongoose");
 
-export const connectToDB = async () => {
+exports.connectToDB = async () => {
   mongoose.connect(config.mongo_uri);
 };
