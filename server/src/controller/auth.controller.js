@@ -3,6 +3,9 @@ const User = require("../model/User.model.js");
 const CustomError = require("../utils/CustomError");
 const asyncHandler = require("../utils/asyncHandler");
 
+exports.verifyOtp = async (req, res) => {
+  const { email, otp } = req.body;
+};
 exports.signup = asyncHandler(async (req, res, next) => {});
 exports.login = asyncHandler(async (req, res, next) => {});
 exports.sendOTP = asyncHandler(async (req, res) => {

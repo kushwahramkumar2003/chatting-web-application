@@ -1,15 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import config from "../../config/config";
+import { useEffect } from "react/cjs/react.production.min";
 function Signup() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+
   const [password, setPassword] = useState("");
   const [retypePassword, setRetypePassword] = useState("");
   const [phone, setPhone] = useState("");
-
-  
-
-  const submit = () => {};
 
   return (
     <div>
@@ -29,13 +27,7 @@ function Signup() {
           </div>
           <div>
             <h1>Email</h1>
-            <input
-              type="text"
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              value={email}
-            />
+            <input type="text" />
           </div>
           <div>
             <h1>Phone</h1>
